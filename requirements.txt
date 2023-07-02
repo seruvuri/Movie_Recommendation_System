@@ -1,0 +1,9 @@
+scikit-learn
+pymongo
+seaborn
+matplotlib
+pandas
+numpy
+flask
+drill
+-e .
