@@ -3,6 +3,8 @@ import pandas as pd
 from src.exception import CustomException
 from src.logger import logging
 from dataclasses import dataclass
+from src.components.data_transformation import DataTranformation
+from src.components.recommendation_trainer import RecommendationTrainer
 
 from src.utils import *
 
@@ -19,7 +21,7 @@ class Dataingestion:
             logging.info('Dataingestion initiated')
             collection=MongoDB_con(url="mongodb+srv://sairam:sairam8662@cluster0.lyahcgb.mongodb.net/?retryWrites=true&w=majority",
                                database_name='Recommendation_system',collection_name='TMDB_Movies')
-            #checking if the list is empty or not
+            #checking if the data list is empty or not
             if collection.find()== 0:
                             logging.info("No data available")
                             exit()
@@ -36,3 +38,10 @@ class Dataingestion:
 if __name__=="__main__":
     ingestion_obj=Dataingestion()
     raw_dataset=ingestion_obj.initiate_dataingestion()
+    
+    #combining data transformation component
+    data_transformation_obj=DataTranformation()
+    movies_list=data_transformation_obj.initiate_data_transformation(dataset=raw_dataset)
+
+    recommendation_training_obj=RecommendationTrainer()
+    similarity_obj=recommendation_training_obj.initiate_recommendation_trainer(movies_df=movies_list)
