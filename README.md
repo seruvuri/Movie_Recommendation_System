@@ -6,7 +6,8 @@
 
 ## Components
 
-### <a data_ingestion="src/components/data_ingestion.py">Data_ingestion</a>
+### data_ingestion
+
     Getting movies data from  MongoDB database
 
 ### data_transformation
