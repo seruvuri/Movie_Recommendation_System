@@ -1,6 +1,10 @@
 # Movie recommendation system using content Based filtering
 
+
 ![image](https://github.com/seruvuri/Movie_Recommendation_System/assets/109864276/1c5b1b41-4c27-42fe-b926-c196da8a255c)
+
+#### NOTE : Similarity.pkl isn't uploaded 
+    Not able to add similarity.pkl file in artifacts folder  due to high file size. CHECK recommendation_trainer.py file for getting pickle file
 
 ## TOP 10 Movie recommendations 
 
