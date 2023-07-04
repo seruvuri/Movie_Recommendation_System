@@ -6,7 +6,7 @@
 
 ## Components
 
-### <a data_ingestion="https://github.com/seruvuri/Movie_Recommendation_System/blob/5fda201931467446a0ad238c20898c4cd2cd00d4/src/components/data_ingestion.py">Data_ingestion</a>
+### <a data_ingestion="src/components/data_ingestion.py">Data_ingestion</a>
     Getting movies data from  MongoDB database
 
 ### data_transformation
