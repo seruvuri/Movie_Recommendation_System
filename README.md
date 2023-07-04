@@ -6,7 +6,7 @@
 
 ## Components
 
-### Data_ingestion 
+### <a data_ingestion="https://github.com/seruvuri/Movie_Recommendation_System/blob/5fda201931467446a0ad238c20898c4cd2cd00d4/src/components/data_ingestion.py">Data_ingestion</a>
     Getting movies data from  MongoDB database
 
 ### data_transformation
@@ -21,11 +21,11 @@
 
   ### recommendation_trainer
 
-  using to *CounterVectorizer* to analyzing text in "tags" column and converting into vector matrix
+  > using to *CounterVectorizer* to analyzing text in "tags" column and converting into vector matrix
 
     from sklearn.feature_extraction.text import CountVectorizer
     
-  using *Cosine similarity* from sklearn for finding similarity between indexs
+  > using *Cosine similarity* from sklearn for finding similarity between indexs
 
     from sklearn.metrics.pairwise import cosine_similarity
   
